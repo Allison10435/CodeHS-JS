@@ -1,0 +1,35 @@
+//the
+function start(){
+    move();
+    the();
+}
+function the(){
+    first();
+    move();
+    turnAround();
+    second();
+    move();
+    move();
+    turnAround();
+}
+function first(){
+    while (ballsPresent()){
+        takeBall();
+        move();
+        putBall();
+        putBall();
+        turnAround();
+        move();
+        turnAround();
+    }
+}
+function second(){
+    while (ballsPresent()){
+        takeBall();
+        move();
+        putBall();
+        turnAround();
+        move();
+        turnAround();
+    }
+}
