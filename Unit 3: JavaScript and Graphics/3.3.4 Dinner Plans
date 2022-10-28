@@ -1,0 +1,7 @@
+function start(){
+	var name = readLine("What is your name? ");
+	println("Hello " + name);
+	
+	var time = readInt("What time should we meet for dinner? ");
+	println("Hi " + name + ", " + time + " o'clock sound good?");
+}
