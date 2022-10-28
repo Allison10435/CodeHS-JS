@@ -1,0 +1,34 @@
+function start(){
+    //reads to the reader if today is a weekday
+    var weekday = readBoolean("Is today a weekday? ");
+    var orExp = true || false;
+    
+    //reads to the reader if today is a holiday
+    var holiday = readBoolean("Is today a holiday? ");
+    var orExp = true || false;
+    
+    //says if there is no school or not
+    var noSchoolToday = true;
+    
+    //if it's a weekday and a holiday there is no school
+    if(weekday == true && holiday == true){
+        println("Is there no school today: " + true);
+    }else{
+        //if it's the weekend and it is a holiday there is no school
+        if(weekday == false && holiday == true){
+            println("is there no school today: " + true);
+        }else{
+            //if it's the weekend and there's no holiday there is no school
+            if(weekday == false && holiday == false){
+                println("is there no school today: " + true);
+            }else{
+                //if it's a weekday and there isn't a holiday, there is school
+                if(weekday == true && holiday == false){
+                    println("is there no school today: " + false);
+                }
+            }
+        }
+    }
+}
+
+//This is what I did. It's works 10/10
