@@ -1,0 +1,39 @@
+function start(){
+    move();
+    turnLeft();
+	colomiun();
+	move();
+	turnRight();
+	moveTwice();
+	turnRight();
+	move();
+	colomiun();
+	turn180();
+}
+function turnRight(){
+    turnLeft();
+    turnLeft();
+    turnLeft();
+}
+
+function colomiun(){
+    putBall();
+    move();
+    putBall();
+    move();
+    putBall();
+}
+
+function moveTwice(){
+    move();
+    move();
+}
+
+function turn180(){
+    turnLeft();
+    turnLeft();
+    move();
+    move();
+    move();
+    turnRight();
+}
