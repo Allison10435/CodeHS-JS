@@ -1,0 +1,49 @@
+/* This code makes karel place 6 total balls over the world.
+* there are two colomns of three yellow balls.
+*/
+
+function start(){
+	move();
+	turnLeft();
+	colomn();
+	move();
+	turnRight();
+	moveTwice();
+	turnRight();
+	move();
+	colomn();
+	turn180();
+	moveThreeTimes();
+	turnRight();
+}
+/* This funtion is used in order to make a tower of balls
+*/
+function colomn(){
+    putBall();
+    move();
+    putBall();
+    move();
+    putBall();
+}
+
+function turnRight(){
+    turnLeft();
+    turnLeft();
+    turnLeft();
+}
+
+function moveTwice(){
+    move();
+    move();
+}
+
+function turn180(){
+    turnLeft();
+    turnLeft();
+}
+
+function moveThreeTimes(){
+    move();
+    move();
+    move();
+}
