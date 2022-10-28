@@ -1,0 +1,21 @@
+function start(){
+
+var partOfDay = "morning";
+
+var time = "9 am";
+
+println("In the " + partOfDay + ", I wake up at " + time + ".");
+
+partOfDay = "afternoon";
+
+time = "1 pm";
+
+println("In the " + partOfDay + ", I eat lunch at " + time + ".");
+
+partOfDay = "evening";
+
+time = "11 pm";
+
+println("In the " + partOfDay + ", I go to bed at " + time + ".");
+
+}
