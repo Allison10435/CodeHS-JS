@@ -1,0 +1,39 @@
+var BLACK_RING_RADIUS = 100;
+var BLACK_RING_RADIUS_COLOR = Color.BLACK;
+
+var WHITE_RING_RADIUS = 87.5;
+var WHITE_RING_RADIUS_COLOR = Color.WHITE;
+
+var BLACK_BLOCK_WIDTH = 20;
+var BLACK_BLOCK_HEIGHT = 20;
+var BLACK_BLOCK_COLOR = Color.BLACK;
+
+var BLACK_BAR_WIDTH = 100;
+var BLACK_BAR_HEIGHT = 20;
+
+function start(){
+	var circle = new Circle(BLACK_RING_RADIUS);
+	circle.setPosition(getWidth()/2, getHeight()/2);
+	circle.setColor(BLACK_RING_RADIUS_COLOR);
+	add(circle);
+	
+	var circle = new Circle(WHITE_RING_RADIUS);
+	circle.setPosition(getWidth()/2, getHeight()/2);
+	circle.setColor(WHITE_RING_RADIUS_COLOR);
+	add(circle);
+	
+	var rect = new Rectangle(BLACK_BLOCK_WIDTH, BLACK_BLOCK_HEIGHT);
+	rect.setPosition(getWidth()/2-10, getHeight()/1.7);
+	rect.setColor(BLACK_BLOCK_COLOR);
+	add(rect);
+	
+	var rect = new Rectangle(BLACK_BLOCK_WIDTH, BLACK_BLOCK_HEIGHT);
+	rect.setPosition(getWidth()/2-10, getHeight()/2.6);
+	rect.setColor(BLACK_BLOCK_COLOR);
+	add(rect);
+	
+	var rect = new Rectangle(BLACK_BAR_WIDTH, BLACK_BAR_HEIGHT);
+	rect.setPosition(getWidth()/2.65, getHeight()/2.05);
+	rect.setColor(BLACK_BLOCK_COLOR);
+	add(rect);
+}
