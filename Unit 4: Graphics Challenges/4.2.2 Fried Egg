@@ -1,0 +1,78 @@
+var PAN_RADIUS = getWidth()/3;
+var HANDLE_WIDTH = getWidth()/2;
+var HANDLE_HEIGHT = HANDLE_WIDTH/4;
+var PAN_COLOR = Color.GRAY;
+
+var PAN_BOTTOM_RADIUS = PAN_RADIUS-20;
+var PAN_BOTTOM_COLOR = Color.BLACK;
+
+var EGG_RADIUS = PAN_BOTTOM_RADIUS/4;
+var EGG_WHITE_COLOR = Color.WHITE;
+var EGG_YOLK_COLOR = Color.YELLOW; 
+
+var HIGHLIGHT_RADIUS = EGG_RADIUS/4;
+var HIGHLIGHT_COLOR = Color.WHITE;
+
+
+function start() {
+    var circle = new Circle(PAN_RADIUS);
+    circle.setPosition(getWidth()/2, getHeight()/2);
+    circle.setColor(PAN_COLOR);
+    add(circle);
+    
+    var rect = new Rectangle(HANDLE_WIDTH, HANDLE_HEIGHT);
+    rect.setPosition(getWidth()/2, getHeight()/2-PAN_RADIUS/6);
+    rect.setColor(PAN_COLOR);
+    add(rect);
+    
+    var circle = new Circle(PAN_BOTTOM_RADIUS);
+    circle.setPosition(getWidth()/2, getHeight()/2);
+    circle.setColor(PAN_BOTTOM_COLOR);
+    add(circle);
+    
+    var circle = new Circle(EGG_RADIUS);
+    circle.setPosition(getWidth()/2, getHeight()/2.4);
+    circle.setColor(EGG_WHITE_COLOR);
+    add(circle);
+    
+    var circle = new Circle(EGG_RADIUS);
+    circle.setPosition(getWidth()/2, getHeight()/1.8);
+    circle.setColor(EGG_WHITE_COLOR);
+    add(circle);
+    
+    var circle = new Circle(EGG_RADIUS);
+    circle.setPosition(getWidth()/2.3, getHeight()/2.2);
+    circle.setColor(EGG_WHITE_COLOR);
+    add(circle);
+    
+    var circle = new Circle(EGG_RADIUS);
+    circle.setPosition(getWidth()/2.4, getHeight()/1.9);
+    circle.setColor(EGG_WHITE_COLOR);
+    add(circle);
+    
+    var circle = new Circle(EGG_RADIUS);
+    circle.setPosition(getWidth()/1.8, getHeight()/2.4);
+    circle.setColor(EGG_WHITE_COLOR);
+    add(circle);
+    
+    var circle = new Circle(EGG_RADIUS);
+    circle.setPosition(getWidth()/1.7, getHeight()/2.2);
+    circle.setColor(EGG_WHITE_COLOR);
+    add(circle);
+    
+    var circle = new Circle(EGG_RADIUS);
+    circle.setPosition(getWidth()/1.8, getHeight()/1.9);
+    circle.setColor(EGG_WHITE_COLOR);
+    add(circle);
+    
+    var circle = new Circle(EGG_RADIUS);
+    circle.setPosition(getWidth()/2, getHeight()/2);
+    circle.setColor(EGG_YOLK_COLOR);
+    add(circle);
+    
+    var circle = new Circle(HIGHLIGHT_RADIUS);
+    circle.setPosition(getWidth()/1.9, getHeight()/2.1);
+    circle.setColor(HIGHLIGHT_COLOR);
+    add(circle);
+    
+}
