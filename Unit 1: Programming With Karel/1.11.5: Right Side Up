@@ -1,0 +1,13 @@
+function start(){
+	senser();
+}
+
+function senser(){
+    if(facingSouth()){
+        turnLeft();
+    }else{
+        for(var i = 0; i < 2; i++){
+            turnLeft();
+        }
+    }
+}
