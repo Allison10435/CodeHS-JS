@@ -1,0 +1,37 @@
+//This program will move Karel to place balls in a tower like form
+function start(){
+    buildTower();
+    if(frontIsClear()){
+        move();
+        move();
+        if(frontIsBlocked()){
+            buildTower();
+        }
+        while(frontIsClear()){ //This will make Karel make a tower when the front is clear
+            buildTower();
+            move();
+            if(frontIsClear()){
+                move();
+                if(frontIsBlocked()){
+                    buildTower();
+                }
+            }
+        }
+    }
+}
+function buildTower(){
+    turnLeft();
+    for(var i = 0; i < 3; i++){
+        putBall();
+        move();
+    }
+    turnAround();
+    goDown();
+    turnLeft();
+}
+
+function goDown(){
+    while(frontIsClear()){
+        move();
+    }
+}
