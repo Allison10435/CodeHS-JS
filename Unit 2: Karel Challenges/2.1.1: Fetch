@@ -1,0 +1,42 @@
+//* This code will make Karel go up to the platform on the world and pick the ball up to go back to the start and drop the ball off.*/
+function start() {
+    fetch();
+    moveTwice();
+    collector();
+    comeback();
+}
+function noBalls(){
+    if(noBallsPresent()){
+        putBall();
+    }
+
+}
+
+function collector(){
+    if(ballsPresent()){
+        takeBall();
+    }
+}
+
+function fetch(){
+    turnLeft();
+    for(var i = 0; i < 4; i++){
+        move();
+    }
+    turnRight();
+}
+
+function moveTwice(){
+    for(var i = 0; i < 2; i++){
+        move();
+    }
+}
+
+function comeback(){
+    turnAround();
+    moveTwice();
+    fetch();
+    turnLeft();
+    turnLeft();
+    noBalls();
+}
