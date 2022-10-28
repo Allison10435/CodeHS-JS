@@ -1,0 +1,52 @@
+/* This program will make Karel go around the world and pick up every ball
+* and then end at street 1 avenue 1 facing south. */
+function start(){
+    while(leftIsClear()){
+        cleanUpRow();
+    }
+    finish();
+    turnAround();
+    while(frontIsClear()){
+        move();
+    }
+    turnLeft();
+    while(frontIsClear()){
+        move();
+    }
+    turnLeft();
+}
+
+function cleanUpRow(){
+    while(frontIsClear()){
+        if(ballsPresent()){
+            takeBall();
+        }
+        move();
+    }
+    blockedWall();
+}
+
+function blockedWall(){
+    if(ballsPresent()){
+        takeBall();
+    }
+    turnLeft();
+    move();
+    turnLeft();
+    while(frontIsClear()){
+        move();
+    }
+    turnAround();
+}
+
+function finish(){
+    if(ballsPresent()){
+        takeBall();
+    }
+    while(frontIsClear()){
+        move();
+        if(ballsPresent()){
+            takeBall();
+        }
+    }
+}
