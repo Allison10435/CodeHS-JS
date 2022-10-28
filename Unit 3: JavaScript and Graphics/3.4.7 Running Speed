@@ -1,0 +1,10 @@
+function start(){
+	println("This program will tell you how fast you ran per mile.");
+	var miles = readFloat("How many miles did you run? ");
+	var minutes = readInt("How many minutes");
+	var hours = minutes / 60;
+	
+	var speed = miles/ hours;
+	
+	println("You were going " + speed + " mph.");
+}
