@@ -1,0 +1,4 @@
+function start(){
+	var Dog = false;
+	println("Do you have a dog: " + Dog);
+}
