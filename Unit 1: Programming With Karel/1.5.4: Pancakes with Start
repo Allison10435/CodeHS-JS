@@ -1,0 +1,17 @@
+function start(){
+    makePancakesx3();
+}
+
+function makePancakes(){
+    move();
+    putBall();
+    putBall();
+    putBall();
+    move();
+}
+
+function makePancakesx3(){
+    makePancakes();
+    makePancakes();
+    makePancakes();
+}
