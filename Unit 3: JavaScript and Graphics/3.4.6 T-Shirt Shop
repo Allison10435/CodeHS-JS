@@ -1,0 +1,9 @@
+var COST_OF_SHIRT = 20;
+
+function start(){
+    println("This program tells you what your shirt(s) will cost");
+    var shirts = readFloat("How many shirts do you want? ");
+	var dollars = shirts * COST_OF_SHIRT;
+	
+	println("$"  + dollars +  "="  + shirts);
+}
