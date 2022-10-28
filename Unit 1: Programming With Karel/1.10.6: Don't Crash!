@@ -1,0 +1,11 @@
+function start() {
+    buttSenser();
+}
+ function buttSenser(){
+     if(facingEast()){
+         move();
+     }else{
+         turnLeft();
+         move();
+     }
+ }
