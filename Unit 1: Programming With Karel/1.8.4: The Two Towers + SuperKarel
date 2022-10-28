@@ -1,0 +1,34 @@
+function start(){
+	move();
+	turnLeft();
+	colomn();
+	move();
+	turnRight();
+	moveTwice();
+	turnRight();
+	move();
+	colomn();
+	turnAround();
+	movex3();
+	turnRight();
+}
+/* Colomn is a code that repeats placing a ball down and moving forward
+* three times
+*/
+function colomn(){
+    putBall();
+    move();
+    putBall();
+    move();
+    putBall();
+}
+
+function movex3(){
+    move();
+    move();
+    move();
+}
+ function moveTwice(){
+     move();
+     move();
+ }
