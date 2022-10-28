@@ -1,0 +1,10 @@
+function start(){
+    var orExp = true || false;
+	var credits = readBoolean("Do you have enough credits to graduate? ");
+	
+	var orExp = true || false;
+	var requirements = readBoolean("Have you met all of your graduation requirements? ");
+	
+	var result = credits && requirements;
+	println("Can you graduate? " + result);
+}
